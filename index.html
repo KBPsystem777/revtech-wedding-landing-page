@@ -5,15 +5,56 @@
     <title>Wedding Coordination App</title>
     <link rel="stylesheet" href="styles.css" />
     <!-- External CSS file for styling -->
+
+    <!-- Meta Tags for SEO -->
+    <meta
+      name="description"
+      content="Revolutionize the wedding industry with our wedding coordination app. Connect with professional wedding coordinators, access a marketplace of wedding materials, and manage your wedding events efficiently."
+    />
+    <meta
+      name="keywords"
+      content="wedding coordination, wedding coordinators, wedding materials, event management, wedding app"
+    />
+    <meta name="author" content=Revolutionary Tech">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Open Graph Tags for Social Media Sharing -->
+    <meta property="og:title" content="Wedding Coordination App" />
+    <meta
+      property="og:description"
+      content="Revolutionize the wedding industry with our wedding coordination app. Connect with professional wedding coordinators, access a marketplace of wedding materials, and manage your wedding events efficiently."
+    />
+    <meta
+      property="og:image"
+      content="https://v5-cdn.easyweddings.com/images/easy-weddings-opengraph.jpg"
+    />
+    <!-- Replace with URL of your app's logo or an image representing your app -->
+    <meta property="og:url" content="https://weddingtech.netlify.app/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card Tags for Twitter Sharing -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Wedding Coordination App" />
+    <meta
+      name="twitter:description"
+      content="Revolutionize the wedding industry with our wedding coordination app. Connect with professional wedding coordinators, access a marketplace of wedding materials, and manage your wedding events efficiently."
+    />
+    <meta
+      name="twitter:image"
+      content="https://v5-cdn.easyweddings.com/images/easy-weddings-opengraph.jpg"
+    />
+    <!-- Replace with URL of your app's logo or an image representing your app -->
+    <meta name="twitter:url" content="https://weddingtech.netlify.app/" />
+    <meta name="twitter:creator" content="@carmelapadasas" />
   </head>
   <body>
     <header>
-      <h1>Welcome to our Wedding Coordination App</h1>
+      <h1>WeddingTechXperience</h1>
     </header>
 
     <section id="signup">
       <div class="container">
-        <h2>Sign up as a Wedding Couple or Wedding Coordinator</h2>
+        <h2>Sign up as a Wedding Couple, Coordinator or Supplier</h2>
         <div class="signup-form">
           <form data-netlify="true" method="POST" name="signups">
             <!-- Replace "signup.php" with your backend script -->
@@ -34,6 +75,7 @@
               <select id="role" name="role" required>
                 <option value="couple">Wedding Couple</option>
                 <option value="coordinator">Wedding Coordinator</option>
+                <option value="supplier">Wedding Supplier</option>
               </select>
             </div>
             <button type="submit">Sign Up</button>
@@ -54,6 +96,17 @@
         </ul>
       </div>
     </section>
+    <section class="contact-section">
+      <div class="container contacts">
+        <h2>Contact Us</h2>
+        <p>
+          Have any questions? Reach out to us at
+          <a href="mailto:web3fleet@gmail.com" class="cta-link"
+            >web3fleet@gmail.com</a
+          >
+        </p>
+      </div>
+    </section>
     <style>
       /* Global Styles */
       body {
@@ -62,10 +115,18 @@
         padding: 0;
       }
 
+      .cta-link {
+        color: #333;
+        text-decoration: none;
+      }
+
       .container {
         max-width: 960px;
         margin: 0 auto;
         padding: 20px;
+      }
+      .contacts {
+        text-align: center;
       }
 
       h1,
@@ -76,11 +137,12 @@
       ul {
         list-style: none;
         padding-left: 0;
+        text-align: center;
       }
 
       /* Header Styles */
       header {
-        background-color: #f2f2f2;
+        background-color: #f7f7f7;
         padding: 20px 0;
       }
 
@@ -156,7 +218,7 @@
     </style>
 
     <footer>
-      <p>&copy; 2023 Wedding Coordination App. All rights reserved.</p>
+      <p>&copy; 2023 Revolutionary Weddings. All rights reserved.</p>
     </footer>
   </body>
 </html>
