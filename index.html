@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Wedding Coordination App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- External CSS file for styling -->
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to our Wedding Coordination App</h1>
+    </header>
+
+    <section id="signup">
+      <div class="container">
+        <h2>Sign up as a Wedding Couple or Wedding Coordinator</h2>
+        <div class="signup-form">
+          <form data-netlify="true" method="POST">
+            <!-- Replace "signup.php" with your backend script -->
+            <div class="form-group">
+              <label for="name">Full Name:</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="role">Sign up as:</label>
+              <select id="role" name="role" required>
+                <option value="couple">Wedding Couple</option>
+                <option value="coordinator">Wedding Coordinator</option>
+              </select>
+            </div>
+            <button type="submit">Sign Up</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="container">
+        <h2>Our Wedding Coordination App Features</h2>
+        <ul>
+          <li>Discover and connect with professional wedding coordinators</li>
+          <li>Access a marketplace of wedding materials and services</li>
+          <li>Efficient event management tools for organizing weddings</li>
+          <li>Personalized recommendations based on your preferences</li>
+          <li>Secure and reliable platform for all your wedding needs</li>
+        </ul>
+      </div>
+    </section>
+    <style>
+      /* Global Styles */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      h1,
+      h2 {
+        text-align: center;
+      }
+
+      ul {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      /* Header Styles */
+      header {
+        background-color: #f2f2f2;
+        padding: 20px 0;
+      }
+
+      /* Sign up Section Styles */
+      #signup {
+        background-color: #fff;
+        padding: 40px 0;
+      }
+
+      .signup-form {
+        max-width: 400px;
+        margin: 0 auto;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      label {
+        display: block;
+        font-weight: bold;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      button[type="submit"] {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      button[type="submit"]:hover {
+        background-color: #45a049;
+      }
+
+      /* Features Section Styles */
+      #features {
+        background-color: #f2f2f2;
+        padding: 40px 0;
+      }
+
+      /* Footer Styles */
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+
+      /* Media Queries */
+      @media screen and (max-width: 600px) {
+        h1 {
+          font-size: 24px;
+        }
+
+        h2 {
+          font-size: 20px;
+        }
+      }
+    </style>
+
+    <footer>
+      <p>&copy; 2023 Wedding Coordination App. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
